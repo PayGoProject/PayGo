@@ -1,5 +1,47 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div(class="parallax")
+		div(id="group1" class="parallax__group")
+			div(class="parallax__layer parallax__layer--base")
+				header 
+					h1 Header
+				div(class="title") Base layer
+
+		div(id="group2" class="parallax__group")
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+			div(class="parallax__layer parallax__layer--back")
+				div(class="title") Background layer
+
+		div(id="group3" class="parallax__group")
+			div(class="parallax__layer parallax__layer--fore")
+				div(class="title") Foreground layer
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+
+		div(id="group4" class="parallax__group")
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+			div(class="parallax__layer parallax__layer--back")
+				div(class="title") Background layer
+			div(class="parallax__layer parallax__layer--deep")
+				div(class="title") Deep background layer
+
+		div(id="group5" class="parallax__group")
+			div(class="parallax__layer parallax__layer--fore")
+				div(class="title") Foreground layer
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+
+		div(id="group6" class="parallax__group")
+			div(class="parallax__layer parallax__layer--back")
+				div(class="title") Background layer
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+
+		div(id="group7" class="parallax__group")
+			div(class="parallax__layer parallax__layer--base")
+				div(class="title") Base layer
+				footer
+					h1 Footer
